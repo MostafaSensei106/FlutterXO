@@ -1,0 +1,219 @@
+{
+    "@@locale": "en",
+    "@appName": {
+        "description": "App name"
+    },
+    "appName": "Tadamon",
+    "@appDescription": {
+        "description": "App description"
+    },
+    "appDescription": "O Allah, have mercy on our brothers, steady their feet, grant them victory, and honor those who support them, and humiliate by Your power those who abandoned them.",
+    "@errorHandle": {
+        "description": "Tadamon app error"
+    },
+    "errorHandle": "An error occurred",
+    "@noPage": {
+        "description": "Page not found"
+    },
+    "noPage": "Page not found",
+    "@noRoutes": {
+        "description": "Page not found"
+    },
+    "noRoutes": "Page not found",
+    "@back": {
+        "description": "Back button"
+    },
+    "back": "Back",
+    "@home": {
+        "description": "Main app title"
+    },
+    "home": "Home",
+    "@search": {
+        "description": "Search button"
+    },
+    "search": "Search",
+    "@logs": {
+        "description": "Logs page"
+    },
+    "logs": "Logs",
+    "@scanBarcode": {
+        "description": "Scan barcode button"
+    },
+    "scanBarcode": "Scan Barcode",
+    "@imageAnalysis": {
+        "description": "Image analysis"
+    },
+    "imageAnalysis": "Image Analysis",
+    "@editText": {
+        "description": "Text editing"
+    },
+    "editText": "Edit Text",
+    "@palatineMap": {
+        "description": "Palestine map"
+    },
+    "palatineMap": "Palestine Map",
+    "@donate": {
+        "description": "Donate to Gaza button"
+    },
+    "donate": "Donate to Gaza",
+    "@scanedProducts": {
+        "description": "Reviewed products count"
+    },
+    "scanedProducts": "Reviewed Products",
+    "@supportedProducts": {
+        "description": "Supported products count"
+    },
+    "supportedProducts": "Supported Products",
+    "@systemTheme": {
+        "description": "App theme settings"
+    },
+    "systemTheme": "App Theme",
+    "@followSystemTheme": {
+        "description": "Match system theme"
+    },
+    "followSystemTheme": "Follow System Theme",
+    "@darkTheme": {
+        "description": "Dark mode"
+    },
+    "darkTheme": "Dark Mode",
+    "@lightTheme": {
+        "description": "Light mode"
+    },
+    "lightTheme": "Light Mode",
+    "@switchToDarkTheme": {
+        "description": "Switch to dark mode"
+    },
+    "switchToDarkTheme": "Switch to Dark Mode",
+    "@switchToLightTheme": {
+        "description": "Switch to light mode"
+    },
+    "switchToLightTheme": "Switch to Light Mode",
+    "@appOffLine": {
+        "description": "App offline status"
+    },
+    "appOffLine": "Tadamon Offline",
+    "@appOffLineMassageDontRunning": {
+        "description": "Offline message"
+    },
+    "appOffLineMassageDontRunning": "The app is not connected.",
+    "@appOnLineMassageRunning": {
+        "description": "App running message"
+    },
+    "appOnLineMassageRunning": "The app is running successfully.",
+    "@appOflineLoading": {
+        "description": "Offline loading"
+    },
+    "appOflineLoading": "Please wait...",
+    "@enableOnline": {
+        "description": "Load product list"
+    },
+    "enableOnline": "Load Product List",
+    "@enableOnlineMassage": {
+        "description": "Message when app runs without internet"
+    },
+    "enableOnlineMassage": "Running the app offline.",
+    "@clearLogs": {
+        "description": "Clear logs"
+    },
+    "clearLogs": "Clear Logs",
+    "@clearLogsMassage": {
+        "description": "Clear product logs"
+    },
+    "clearLogsMassage": "Clearing product logs.",
+    "@howToUse": {
+        "description": "FAQ section"
+    },
+    "howToUse": "FAQ",
+    "@howToUseMassage": {
+        "description": "How to use the app"
+    },
+    "howToUseMassage": "Learn how to use the app.",
+    "@reportProduct": {
+        "description": "Report a product"
+    },
+    "reportProduct": "Report Product",
+    "@reportProductMassage": {
+        "description": "Help improve the app"
+    },
+    "reportProductMassage": "Help us improve the app.",
+    "@test": {
+        "description": "Test label"
+    },
+    "test": "Test",
+    "@sheetTitleProductInfo": {
+        "description": "Product info sheet title"
+    },
+    "sheetTitleProductInfo": "Product Details",
+    "@developer": {
+        "description": "Developer name"
+    },
+    "developer": "Developer",
+    "@mostafaMahmoud": {
+        "description": "Full developer name"
+    },
+    "mostafaMahmoud": "Mostafa Mahmoud",
+    "@readMe": {
+        "description": "ReadMe button"
+    },
+    "readMe": "ReadMe",
+    "@readMeMassage": {
+        "description": "Link to GitHub repo"
+    },
+    "readMeMassage": "Link to the GitHub repository.",
+    "@letastUpdate": {
+        "description": "Latest updates"
+    },
+    "letastUpdate": "Latest Updates",
+    "@letestUpdateMassage": {
+        "description": "Details of latest update"
+    },
+    "letestUpdateMassage": "See what's new and the changelog.",
+    "@githubTiket": {
+        "description": "Create GitHub issue"
+    },
+    "githubTiket": "GitHub Issue",
+    "@githubTiketMassage": {
+        "description": "Report bug or suggest feature"
+    },
+    "githubTiketMassage": "Report a bug or suggest a new feature.",
+    "@telegramChannel": {
+        "description": "Telegram channel"
+    },
+    "telegramChannel": "Telegram Channel",
+    "@telegramChannelMassage": {
+        "description": "Link to Telegram channel"
+    },
+    "telegramChannelMassage": "Link to the Telegram channel.",
+    "@about": {
+        "description": "About page"
+    },
+    "about": "About the App",
+    "@aboutTadamon": {
+        "description": "About Tadamon"
+    },
+    "aboutTadamon": "About Tadamon App.",
+    "@contactDev": {
+        "description": "Contact developer button"
+    },
+    "contactDev": "Message from Developer",
+    "@devMassage": {
+        "description": "Developer's message"
+    },
+    "devMassage": "No message currently.",
+    "@devThx": {
+        "description": "Thanks from developer"
+    },
+    "devThx": "Thank you for using Tadamon.",
+    "@devDonate": {
+        "description": "Donate to the developer"
+    },
+    "devDonate": "Support the Developer.",
+    "@contactDevMassage": {
+        "description": "Ways to contact developer"
+    },
+    "contactDevMassage": "Follow me on social media.",
+    "@close": {
+        "description": "Close button"
+    },
+    "close": "Close"
+}
