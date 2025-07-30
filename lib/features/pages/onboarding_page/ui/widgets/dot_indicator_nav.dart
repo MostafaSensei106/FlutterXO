@@ -110,7 +110,7 @@ class _DotIndicatorNavState extends State<DotIndicatorNav> {
                         () => _handleNavigation(() {
                           Navigator.pushNamedAndRemoveUntil(
                             context,
-                            Routes.termsGate,
+                            Routes.onBoarding,
                             (final route) => false,
                           );
                         }),
@@ -175,7 +175,7 @@ class _DotIndicatorNavState extends State<DotIndicatorNav> {
                           () => _handleNavigation(() {
                             Navigator.pushNamedAndRemoveUntil(
                               context,
-                              Routes.termsGate,
+                              Routes.onBoarding,
                               (final route) => false,
                             );
                           }),

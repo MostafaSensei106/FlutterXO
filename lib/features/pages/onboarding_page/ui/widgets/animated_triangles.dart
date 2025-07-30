@@ -121,9 +121,10 @@ class GameShapePainter extends CustomPainter {
       // Rotation animation
       final rotation = animationValue * 2 * pi * shape.rotationSpeed;
 
-      canvas.save();
-      canvas.translate(adjustedX, adjustedY);
-      canvas.rotate(rotation);
+      canvas
+        ..save()
+        ..translate(adjustedX, adjustedY)
+        ..rotate(rotation);
 
       if (shape.shapeType == ShapeType.x) {
         _drawX(canvas, shape, opacity);
@@ -135,7 +136,11 @@ class GameShapePainter extends CustomPainter {
     }
   }
 
-  void _drawX(Canvas canvas, GameShape shape, double opacity) {
+  void _drawX(
+    final Canvas canvas,
+    final GameShape shape,
+    final double opacity,
+  ) {
     final strokeWidth = shape.size * 0.15;
     final halfSize = shape.size / 2;
 
@@ -152,11 +157,16 @@ class GameShapePainter extends CustomPainter {
       ..moveTo(halfSize * 0.7, -halfSize * 0.7)
       ..lineTo(-halfSize * 0.7, halfSize * 0.7);
 
-    canvas.drawPath(path1, borderPaint);
-    canvas.drawPath(path2, borderPaint);
+    canvas
+      ..drawPath(path1, borderPaint)
+      ..drawPath(path2, borderPaint);
   }
 
-  void _drawO(Canvas canvas, GameShape shape, double opacity) {
+  void _drawO(
+    final Canvas canvas,
+    final GameShape shape,
+    final double opacity,
+  ) {
     final strokeWidth = shape.size * 0.12;
     final radius = shape.size * 0.35;
 
@@ -165,8 +175,9 @@ class GameShapePainter extends CustomPainter {
     borderPaint.strokeWidth = strokeWidth;
 
     // Draw filled circle with border
-    canvas.drawCircle(Offset.zero, radius, shapePaint);
-    canvas.drawCircle(Offset.zero, radius, borderPaint);
+    canvas
+      ..drawCircle(Offset.zero, radius, shapePaint)
+      ..drawCircle(Offset.zero, radius, borderPaint);
   }
 
   @override
