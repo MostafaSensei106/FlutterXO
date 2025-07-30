@@ -9,7 +9,10 @@ import 'package:flutter/material.dart'
         Widget,
         Theme;
 
+import '../../features/onboarding_page/ui/page/onboarding_page.dart'
+    show OnboardingPage;
 import '../error/no_routes.dart' show NoRoutes;
+import 'routes.dart' show Routes;
 
 class AppRouter {
   static final GlobalKey<NavigatorState> navigatorKey =
@@ -26,9 +29,9 @@ class AppRouter {
   Route<dynamic> generateRoute(final RouteSettings settings) {
     Widget page;
     switch (settings.name) {
-      // case Routes.onBoarding:
-      //   page = const OnboardingPage();
-      //   break;
+      case Routes.onBoarding:
+        page = const OnboardingPage();
+        break;
       default:
         page = const NoRoutes();
     }
