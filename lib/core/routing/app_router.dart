@@ -9,7 +9,7 @@ import 'package:flutter/material.dart'
         Widget,
         Theme;
 
-import '../../features/onboarding_page/ui/page/onboarding_page.dart'
+import '../../features/pages/onboarding_page/ui/page/onboarding_page.dart'
     show OnboardingPage;
 import '../error/no_routes.dart' show NoRoutes;
 import 'routes.dart' show Routes;

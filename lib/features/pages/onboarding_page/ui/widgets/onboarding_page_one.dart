@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../../../../core/config/const/sensei_const.dart';
+import '../../../../../../core/config/const/sensei_const.dart';
 
 class OnboardingPageOne extends StatelessWidget {
   const OnboardingPageOne({super.key});
