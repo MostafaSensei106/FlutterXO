@@ -1,29 +1,16 @@
-# Torikkusu XO Game with Flutter
+# flutterxo
 
-This is a simple (XO) game developed using Flutter.
+A new Flutter project.
 
-## Features
-- Play against another player.
-- Play against AI.
-- Clean and intuitive user interface.
-- Tracks and displays player scores.
-- Dark And Light Theme
+## Getting Started
 
-## Screenshots
--Dark Theme:
--Home Screen in Dark Mode
--![Screenshot_٢٠٢٤٠٥١٨_٢٣٣٩٠٥](https://github.com/MostafaSensei106/Torikkusu-XO-Game/assets/138288138/3cabfa00-376a-43ae-92e9-91188cc58f39)
+This project is a starting point for a Flutter application.
 
--Game Board In Dark Mode
--![Screenshot_٢٠٢٤٠٥١٨_٢٣٣٩٠٩](https://github.com/MostafaSensei106/Torikkusu-XO-Game/assets/138288138/bc3e2dad-7c2b-43a7-a684-e680848b74b1)
+A few resources to get you started if this is your first Flutter project:
 
--Light Theme:
--Home Screen in Light Mode
--![Screenshot_٢٠٢٤٠٥١٨_٢٣٤١٥٥](https://github.com/MostafaSensei106/Torikkusu-XO-Game/assets/138288138/d529d928-75ee-4f64-a111-7fb34caa3a53)
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
--Game Board In Light Mode
--![Screenshot_٢٠٢٤٠٥١٨_٢٣٤١٤٥](https://github.com/MostafaSensei106/Torikkusu-XO-Game/assets/138288138/500b8f6c-9e0f-4fe8-82dd-1066a7506fcf)
-
-
-## Installation
--Just Download And Have Fun😁😁💕.
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
