@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../../../../../core/routing/routes.dart';
-import '../widgets/animated_triangles.dart'
-    show AnimatedTriangles, AnimatedGameShapes;
+import '../widgets/animated_triangles.dart' show AnimatedGameShapes;
 import '../widgets/dot_indicator_nav.dart' show DotIndicatorNav;
 import '../widgets/onboarding_page_one.dart' show OnboardingPageOne;
 import '../widgets/onboarding_page_two.dart' show OnboardingPageTwo;
