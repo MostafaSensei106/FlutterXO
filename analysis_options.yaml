@@ -23,7 +23,7 @@ linter:
     prefer_single_quotes: true
     file_names: true
     directives_ordering: true
-    sort_pub_dependencies: true
+    sort_pub_dependencies: false
     prefer_relative_imports: true
     unnecessary_this: true
     unnecessary_brace_in_string_interps: true
