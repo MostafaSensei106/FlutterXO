@@ -421,6 +421,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Close'**
   String get close;
+
+  /// Game settings
+  ///
+  /// In en, this message translates to:
+  /// **'Game Settings'**
+  String get gameSettings;
+
+  /// Change difficulty, time, players names
+  ///
+  /// In en, this message translates to:
+  /// **'Change difficulty, time, players names'**
+  String get gameSettingsMassage;
 }
 
 class _AppLocalizationsDelegate

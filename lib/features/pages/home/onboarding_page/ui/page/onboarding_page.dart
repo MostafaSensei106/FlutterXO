@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import '../../../../../../core/routing/routes.dart';
+import '../../../../../../../core/routing/routes.dart';
 import '../widgets/animated_triangles.dart' show AnimatedGameShapes;
 import '../widgets/dot_indicator_nav.dart' show DotIndicatorNav;
 import '../widgets/onboarding_page_one.dart' show OnboardingPageOne;
@@ -24,7 +24,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
 
   Future<void> _checkAgreement() async {
     final prefs = await SharedPreferences.getInstance();
-    final agreed = prefs.getBool('agreed_to_terms') ?? false;
+    final agreed = prefs.getBool('agreed_to_terms') ?? true;
     if (agreed) {
       _navigateToHome();
     } else {
@@ -35,7 +35,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
   void _navigateToHome() {
     Navigator.pushNamedAndRemoveUntil(
       context,
-      Routes.onBoarding,
+      Routes.home,
       (final route) => false,
     );
   }

@@ -1,0 +1,32 @@
+# dart run flutter_native_splash:create
+flutter_native_splash:
+  # Set the background color of the splash screen
+  color: "#fcf1e1"
+
+  # Add a logo image in the center of the splash screen
+  image: assets/icons/play_store_512.png
+
+  # Position the logo image at the center of the screen
+  android_gravity: center
+
+  # Add branding at the bottom of the screen
+  # branding: assets/images/MHlogo.png
+  # branding_mode: bottom
+  # branding_bottom_padding: 24
+
+  # Android 12 and later specific configuration
+  android_12:
+    # Set the background color for Android 12+
+    color: "#fcf1e1"
+    image: assets/icons/ic_launcher_foreground.png
+
+  # Dark mode support
+  #color_dark: "#1c110f"
+  # branding_dark: assets/images/MHlogo.png
+
+  # Disable splash screen generation for iOS and web
+  ios: false
+  web: false
+
+  # Enable fullscreen mode to hide the notification bar on Android
+  fullscreen: true

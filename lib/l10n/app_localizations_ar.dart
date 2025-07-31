@@ -170,4 +170,10 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get close => 'إغلاق';
+
+  @override
+  String get gameSettings => 'Game Settings';
+
+  @override
+  String get gameSettingsMassage => 'Change difficulty, time, players names';
 }

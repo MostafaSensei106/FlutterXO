@@ -170,4 +170,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get close => 'Close';
+
+  @override
+  String get gameSettings => 'Game Settings';
+
+  @override
+  String get gameSettingsMassage => 'Change difficulty, time, players names';
 }
