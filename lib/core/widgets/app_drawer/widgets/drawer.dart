@@ -35,8 +35,8 @@ import '../../list_tile_components/list_tile_icon_component.dart'
     show ListTileIconComponent;
 import 'drawer_header.dart' show DrawerHeaderWidget;
 
-class SenseiDrawer extends StatelessWidget {
-  const SenseiDrawer({super.key});
+class SettingsDrawer extends StatelessWidget {
+  const SettingsDrawer({super.key});
 
   /// Creates an [Icon] that is conditionally styled based on the presence of
   /// [WidgetState.selected] in the given [Set] of [WidgetState]s.

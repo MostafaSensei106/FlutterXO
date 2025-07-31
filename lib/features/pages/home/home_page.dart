@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/config/const/app_enums.dart';
+import '../../../core/logic/game/cubit/game_cubit.dart';
+import '../../../core/widgets/app_drawer/widgets/drawer.dart'
+    show SettingsDrawer;
+import '../../../core/widgets/button_components/icon_button_components/icon_button_filled_component.dart';
 import '../gmae/game_page.dart';
 import '../setting_page/settings_page.dart';
 
@@ -10,21 +14,13 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(final BuildContext context) => Scaffold(
     appBar: AppBar(
-      title: const Text('XO Game'),
-      actions: [
-        IconButton(
-          icon: const Icon(Icons.settings),
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (final context) => const SettingsScreen(),
-              ),
-            );
-          },
-        ),
-      ],
+      title: const Text('Wellcome to Tic Tac Toe Game'),
+      leading: IconButtonFilledComponent(
+        icon: Icons.more_horiz_rounded,
+        onPressed: () => Scaffold.of(context).openDrawer(),
+      ),
     ),
+    drawer: const SettingsDrawer(),
     body: Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,

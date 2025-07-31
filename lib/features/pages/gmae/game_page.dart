@@ -6,6 +6,7 @@ import '../../../core/logic/game/cubit/game_cubit.dart';
 import '../../../core/logic/game/cubit/game_state.dart';
 import '../../../core/logic/settings/cubit/settings_cubit.dart';
 import '../../../core/logic/settings/cubit/settings_state.dart';
+import '../../../core/widgets/button_components/icon_button_components/icon_button_filled_component.dart';
 
 class GameScreen extends StatelessWidget {
   const GameScreen({required this.mode, super.key});
@@ -16,8 +17,8 @@ class GameScreen extends StatelessWidget {
     appBar: AppBar(
       title: Text(mode == GameMode.vsAI ? 'vs AI' : 'vs Friend'),
       actions: [
-        IconButton(
-          icon: const Icon(Icons.refresh),
+        IconButtonFilledComponent(
+          icon: Icons.refresh,
           onPressed: () {
             context.read<GameCubit>().startNewGame(mode: mode);
           },
