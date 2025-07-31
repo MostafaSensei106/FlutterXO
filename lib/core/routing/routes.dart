@@ -3,6 +3,8 @@ class Routes {
   /// The on-boarding route.
   static const String onBoarding = '/';
 
+  static const String Home = '/home';
+
   static const String chatWithDev = '/chatWithDev';
 
   static const String appInfo = '/appInfo';

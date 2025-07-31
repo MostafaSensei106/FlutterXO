@@ -9,6 +9,7 @@ import 'package:flutter/material.dart'
         Widget,
         Theme;
 
+import '../../features/pages/home/home_page.dart';
 import '../../features/pages/onboarding_page/ui/page/onboarding_page.dart'
     show OnboardingPage;
 import '../error/no_routes.dart' show NoRoutes;
@@ -32,6 +33,8 @@ class AppRouter {
       case Routes.onBoarding:
         page = const OnboardingPage();
         break;
+      case Routes.Home:
+        page = const HomeScreen();
       default:
         page = const NoRoutes();
     }
