@@ -64,9 +64,7 @@ class _ActionDrawerContainer extends StatelessWidget {
     padding: const EdgeInsets.all(5),
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(SenseiConst.outBorderRadius),
-      color: Theme.of(
-        context,
-      ).colorScheme.surfaceContainerHigh.withAlpha((0.3 * 255).toInt()),
+      color: Theme.of(context).colorScheme.surfaceContainer,
     ),
     child: child,
   );

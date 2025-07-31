@@ -9,8 +9,8 @@ import '../../../core/logic/settings/cubit/settings_state.dart';
 import '../../../core/widgets/button_components/icon_button_components/icon_button_filled_component.dart';
 
 class GameScreen extends StatelessWidget {
-  const GameScreen({required this.mode, super.key});
-  final GameMode mode;
+  const GameScreen({this.mode = GameMode.vsAI, super.key});
+  final GameMode? mode;
 
   @override
   Widget build(final BuildContext context) => Scaffold(
