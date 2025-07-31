@@ -215,5 +215,13 @@
     "@close": {
         "description": "Close button"
     },
-    "close": "Close"
+    "close": "Close",
+    "gameSettings": "Game Settings",
+    "@gameSettings": {
+        "description": "Game settings"
+    },
+    "gameSettingsMassage": "Change difficulty, time, players names",
+    "@gameSettingsMassage": {
+        "description": "Change difficulty, time, players names"
+    }
 }

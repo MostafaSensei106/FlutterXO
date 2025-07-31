@@ -7,6 +7,8 @@ class Routes {
 
   static const String game = '/home/game';
 
+  static const String settings = '/home/settings';
+
   static const String chatWithDev = '/chatWithDev';
 
   static const String appInfo = '/appInfo';

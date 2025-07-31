@@ -20,7 +20,7 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Image.asset('assets/icon.png'),
+            Image.asset('assets/icon.png', width: 200, height: 200),
             const SizedBox(height: 32),
             const Text(
               'Choose Game Mode',

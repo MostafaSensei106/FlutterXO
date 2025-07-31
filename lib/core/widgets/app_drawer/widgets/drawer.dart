@@ -17,7 +17,8 @@ import 'package:flutter/widgets.dart'
         AnimatedSize,
         ListView,
         ValueKey,
-        Navigator;
+        Navigator,
+        SafeArea;
 import 'package:flutter_bloc/flutter_bloc.dart' show BlocBuilder, ReadContext;
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../l10n/app_localizations.dart';
@@ -29,7 +30,7 @@ import '../../../config/theme/colors/logic/cubit/theme_state.dart'
     show ThemeState;
 import '../../../config/theme/colors/logic/helper/theme_toggle_helper.dart'
     show toggleTheme;
-import '../../../routing/routes.dart' show Routes;
+import '../../../routing/routes.dart' show Routes, noRoutes;
 import '../../../services/url_services/url_services.dart' show launchURL;
 import '../../list_tile_components/list_tile_icon_component.dart'
     show ListTileIconComponent;
@@ -77,16 +78,32 @@ class SettingsDrawer extends StatelessWidget {
           Radius.circular(SenseiConst.outBorderRadius),
         ),
       ),
-      child: ListView(
-        padding: const EdgeInsets.only(
-          left: SenseiConst.padding,
-          right: SenseiConst.padding,
-          bottom: SenseiConst.padding,
+      child: SafeArea(
+        child: ListView(
+          padding: const EdgeInsets.only(
+            left: SenseiConst.padding,
+            right: SenseiConst.padding,
+            bottom: SenseiConst.padding,
+          ),
+          children: [
+            //const SizedBox(width: double.infinity, child: DrawerHeaderWidget()),
+            AnimatedSize(
+              duration: const Duration(milliseconds: 250),
+              child: Column(
+                children: [
+                  _buildThemeSwitch(context),
+                  _buildModeSwitch(context),
+                  _buildGameSettings(context),
+                  _buildReadMe(context),
+                  _buildLetestUpdate(context),
+                  _buildGithubToken(context),
+                  _buildDeveloper(context),
+                  _buildAbout(context),
+                ],
+              ),
+            ),
+          ],
         ),
-        children: const [
-          SizedBox(width: double.infinity, child: DrawerHeaderWidget()),
-          AnimatedSize(duration: Duration(milliseconds: 250), child: Column()),
-        ],
       ),
     ),
   );
@@ -149,6 +166,22 @@ class SettingsDrawer extends StatelessWidget {
               ),
       );
 
+  Widget _buildGameSettings(final BuildContext context) =>
+      ListTileIconComponent(
+        groupType: ListTileGroupType.single,
+        iconLeading: Icons.settings_outlined,
+        title: AppLocalizations.of(context)!.gameSettings,
+        subtitle: AppLocalizations.of(context)!.gameSettingsMassage,
+        trailing: Icon(
+          Icons.arrow_forward_ios_rounded,
+          color: Theme.of(context).colorScheme.onSurface.withAlpha(0x80),
+        ),
+        onTap: () {
+          Navigator.pop(context);
+          Navigator.pushNamed(context, Routes.settings);
+        },
+      );
+
   Widget _buildReadMe(final BuildContext context) => ListTileIconComponent(
     groupType: ListTileGroupType.top,
     iconLeading: Icons.description_outlined,
@@ -182,7 +215,7 @@ class SettingsDrawer extends StatelessWidget {
       );
 
   Widget _buildGithubToken(final BuildContext context) => ListTileIconComponent(
-    groupType: ListTileGroupType.middle,
+    groupType: ListTileGroupType.bottom,
     iconLeading: Icons.live_help_outlined,
     title: AppLocalizations.of(context)!.githubTiket,
     subtitle: AppLocalizations.of(context)!.githubTiketMassage,
@@ -196,23 +229,6 @@ class SettingsDrawer extends StatelessWidget {
       launchURL(SenseiConst.devGitHubIssuesLink);
     },
   );
-
-  Widget _buildTelegramChannel(final BuildContext context) =>
-      ListTileIconComponent(
-        groupType: ListTileGroupType.bottom,
-        iconLeading: Icons.telegram_rounded,
-        title: AppLocalizations.of(context)!.telegramChannel,
-        subtitle: AppLocalizations.of(context)!.telegramChannelMassage,
-        trailing: Icon(
-          Icons.link_rounded,
-          color: Theme.of(context).colorScheme.onSurface.withAlpha(0x80),
-        ),
-        onTap: () {
-          Navigator.pop(context);
-
-          launchURL(SenseiConst.tadamonTelegramLink);
-        },
-      );
 
   Widget _buildDeveloper(final BuildContext context) => ListTileIconComponent(
     groupType: ListTileGroupType.top,
