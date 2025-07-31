@@ -1,0 +1,8 @@
+# To generate app icons, run:
+# dart run flutter_launcher_icons
+flutter_launcher_icons:
+  android: "launcher_icon"
+  image_path: "assets/icons/play_store_512.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "assets/icons/ic_launcher_background.png"
+  adaptive_icon_foreground: "assets/icons/play_store_512.png"
