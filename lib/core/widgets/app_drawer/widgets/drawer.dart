@@ -85,10 +85,7 @@ class SenseiDrawer extends StatelessWidget {
         ),
         children: const [
           SizedBox(width: double.infinity, child: DrawerHeaderWidget()),
-          AnimatedSize(
-            duration: Duration(milliseconds: 250),
-            child: Column(),
-          ),
+          AnimatedSize(duration: Duration(milliseconds: 250), child: Column()),
         ],
       ),
     ),

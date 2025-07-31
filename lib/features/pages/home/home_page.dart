@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../gmae/game_page.dart' show GameScreen;
+import '../../../core/config/const/app_enums.dart';
+import '../gmae/game_page.dart';
+import '../setting_page/settings_page.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -15,7 +17,9 @@ class HomeScreen extends StatelessWidget {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (final context) => SettingsScreen()),
+              MaterialPageRoute(
+                builder: (final context) => const SettingsScreen(),
+              ),
             );
           },
         ),
@@ -37,7 +41,8 @@ class HomeScreen extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (final context) => GameScreen(mode: GameMode.vsAI),
+                  builder: (final context) =>
+                      const GameScreen(mode: GameMode.vsAI),
                 ),
               );
             },
@@ -52,7 +57,8 @@ class HomeScreen extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (final context) => GameScreen(mode: GameMode.vsFriend),
+                  builder: (final context) =>
+                      const GameScreen(mode: GameMode.vsFriend),
                 ),
               );
             },
